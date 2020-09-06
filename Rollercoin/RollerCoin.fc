@@ -44,7 +44,7 @@ class RollerCoin : FaucetScript
     //Available Games
     public enum Games
     {
-        Coins_2048,
+        Coin-Flip,
     }
 
     public override void Start ( )
@@ -175,10 +175,10 @@ class RollerCoin : FaucetScript
 
 
             Wait ( );
-            if ( GameSelected==Games.Coins_2048 )
+            if ( GameSelected==Games.Coin-Flip )
             {
                 FaucetCollector.FaucetTemplates.RollerCoinTemplate template=new FaucetCollector.FaucetTemplates.RollerCoinTemplate(this);
-                template.Play2048Coins ( );
+                template.PlayCoin-Flip ( );
 
             }
 
